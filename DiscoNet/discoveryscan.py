@@ -208,7 +208,7 @@ def _main():
             f.close()
         except:
             print(usage)
-            print("Error: Could not open %s for writing" % argv[1])
+            print(("Error: Could not open %s for writing" % argv[1]))
         try:
             for net in argv[2].split(','):
                 net = ip_network(str(net))
